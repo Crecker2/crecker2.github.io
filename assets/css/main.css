@@ -2600,7 +2600,7 @@
 /* One */
 
 	#one:before {
-		background-image: url("images/newhouse.jpg");
+		background-image: url("../../images/newhouse.jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: cover;
