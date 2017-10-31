@@ -27,8 +27,4 @@ $(document).ready(function(){
 	 	$(this).css('border-color','hsl(' + rand + ',100%,50%)');
 	 	$($(this).data('target')).children().children().css('border-color','hsl(' + rand + ',100%,50%)');
 	 });
-
-	 $('.modal-conten').each(function(){
-	 	$(this).css('border-color','hsl(' + Math.floor(Math.random()*360) + ',100%,50%)');
-	 });
 });
