@@ -18,6 +18,10 @@ a p{
 	padding: 15px;
 }
 
+.navbar{
+	background-color: #4acaa8 !important;
+}
+
 .card{
 	width: 100%;
 	margin: 0 auto;
@@ -41,6 +45,21 @@ a p{
 	margin: 0 auto;
 	border-radius: 0;
 }
+
+.list-group-item p{
+	background-color: #4acaa8;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	border-radius: 15px;
+	color: white;
+	padding: 4px 6px;
+	margin: 4px 6px 0px 0px;
+	font-size: 14px;
+}
+.list-group-item p:hover{
+	background-color: #44b395;
+}
+
+
 .container{
 	padding: 15px;
 }
@@ -85,6 +104,12 @@ twitterwidget {
 	display: block;
 	margin: 0 auto;
 	max-width: 100%;
+}
+
+@media (max-width: 766px){
+	.newsletterExcerpt{
+		text-align: left;
+	}
 }
 
 .newsletterExcerpt{
