@@ -27,4 +27,12 @@ $(document).ready(function(){
 	 	$(this).css('border-color','hsl(' + rand + ',100%,50%)');
 	 	$($(this).data('target')).children().children().css('border-color','hsl(' + rand + ',100%,50%)');
 	 });
+	
+	$('.sort').click(function(event){
+	 	$('.card').show();
+	 	$('.sort').children().removeClass('active');
+	 	$('.card').not('.' + this.getAttribute('data-sort')).hide();
+	 	$("a[data-sort=" + this.getAttribute('data-sort') + "]").children().addClass('active');
+	 	event.stopPropagation();
+	 });
 });
