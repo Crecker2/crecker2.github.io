@@ -10,16 +10,45 @@ a {
 	display: block;
 }
 
+a:hover{
+	text-decoration: none;
+}
+
 a p{
 	color: #4e4e4e;
 }
 
 .container-fluid{
+	padding: 0 15px 15px 15px;
+}
+
+.container{
 	padding: 15px;
+	padding-bottom: 5px;
 }
 
 .navbar{
 	background-color: #4acaa8 !important;
+}
+
+.labels {
+	background-color: #eee;
+	border: none;
+	margin: 0 auto;
+	width: 100%;
+
+}
+
+.labels a{
+	margin: 0 auto;
+	display: inline-block;
+	text-align: center
+}
+
+.labels p{
+	margin: 0 auto;
+	display: inline-block;
+	text-align: center
 }
 
 .card{
@@ -47,6 +76,7 @@ a p{
 }
 
 .list-group-item p{
+	min-width: 45px;
 	background-color: #4acaa8;
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 	border-radius: 15px;
@@ -54,14 +84,17 @@ a p{
 	padding: 4px 6px;
 	margin: 4px 6px 0px 0px;
 	font-size: 14px;
+	text-decoration: none;
+}
+.list-group-item a{
+	text-decoration: none;
 }
 .list-group-item p:hover{
 	background-color: #44b395;
+	text-decoration: none !important;
 }
-
-
-.container{
-	padding: 15px;
+.labels p.active {
+	background-color: orange;
 }
 
 .modal-lg{
