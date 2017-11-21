@@ -22,11 +22,14 @@ $(document).ready(function(){
 	    $("#faith iframe").attr("src", $("#faith iframe").attr("src"));
 	});
 
-	 $('.card').each(function(){
-	 	var rand = Math.floor(Math.random()*360);
-	 	$(this).css('border-color','hsl(' + rand + ',100%,50%)');
-	 	$($(this).data('target')).children().children().css('border-color','hsl(' + rand + ',100%,50%)');
-	 });
+	function newcolorpicker(){
+		var rand = Math.floor(Math.random()*360);
+		var interval = 360/$('.card').length;
+		$('.card').each(function(i){
+			$(this).css('border-color','hsl(' + (rand+i*interval)%360 + ',100%,50%)');
+			$($(this).data('target')).children().children().css('border-color','hsl(' + (rand+i*interval)%360 + ',100%,50%)');
+		});
+	}
 	
 	$('.sort').click(function(event){
 	 	$('.card').show();
