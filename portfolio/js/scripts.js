@@ -30,6 +30,7 @@ $(document).ready(function(){
 			$($(this).data('target')).children().children().css('border-color','hsl(' + (rand+i*interval)%360 + ',100%,50%)');
 		});
 	}
+	newcolorpicker();
 	
 	$('.sort').click(function(event){
 	 	$('.card').show();
