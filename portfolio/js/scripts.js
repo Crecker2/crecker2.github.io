@@ -33,6 +33,7 @@ $(document).ready(function(){
 	newcolorpicker();
 	
 	$('.sort').click(function(event){
+		event.preventDefault();
 		if(this.getAttribute('data-sort') != "showall"){
 			$("html, body").animate({scrollTop: 0}, 200);
 	 		$('.card').hide();
