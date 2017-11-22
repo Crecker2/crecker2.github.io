@@ -33,10 +33,17 @@ $(document).ready(function(){
 	newcolorpicker();
 	
 	$('.sort').click(function(event){
-	 	$('.card').show();
-	 	$('.sort').children().removeClass('active');
-	 	$('.card').not('.' + this.getAttribute('data-sort')).hide();
-	 	$("a[data-sort=" + this.getAttribute('data-sort') + "]").children().addClass('active');
-	 	event.stopPropagation();
+		if(this.getAttribute('data-sort') != "showall"){
+			$("html, body").animate({scrollTop: 0}, 200);
+	 		$('.card').hide();
+	 		$('.sort').children().removeClass('active');
+	 		$('.card.' + this.getAttribute('data-sort')).slideDown();
+	 		$("a[data-sort=" + this.getAttribute('data-sort') + "]").children().addClass('active');
+	 		event.stopPropagation();
+		} else {
+			$('.card').slideDown();
+			$('.sort').children().removeClass('active');
+			$("a[data-sort=" + this.getAttribute('data-sort') + "]").children().addClass('active');
+		}
 	 });
 });
