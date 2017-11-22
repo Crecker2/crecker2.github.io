@@ -42,6 +42,7 @@ $(document).ready(function(){
 	 		$("a[data-sort=" + this.getAttribute('data-sort') + "]").children().addClass('active');
 	 		event.stopPropagation();
 		} else {
+			$('.card').hide();
 			$('.card').slideDown();
 			$('.sort').children().removeClass('active');
 			$("a[data-sort=" + this.getAttribute('data-sort') + "]").children().addClass('active');
