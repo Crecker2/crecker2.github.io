@@ -83,7 +83,6 @@ a:focus{
 
 .card:hover{
 	box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-	cursor: pointer;
 }
 
 .card-header{
@@ -117,6 +116,23 @@ a:focus{
 }
 .labels p.active {
 	background-color: orange;
+}
+
+.card button{
+	border-radius: 0;
+	background-color: #4acaa8;
+	color: white;
+	text-align: right;
+	cursor: pointer;
+	float: right;
+}
+
+.fixer{
+	clear: both;
+}
+
+.card button:hover{
+	background-color: #44b395;
 }
 
 .modal-lg{
