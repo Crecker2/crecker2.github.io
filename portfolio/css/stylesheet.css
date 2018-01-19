@@ -46,12 +46,21 @@ a:focus{
 	margin: 0 auto;
 	width: 100%;
 
+
 }
 
-.labels a{
+button:hover{
+	cursor: pointer;
+}
+.labels button{
 	margin: 0 auto;
 	display: inline-block;
-	text-align: center
+	text-align: center;
+	outline: none;
+	padding: 0;
+	border: none;
+	outline: none;
+	background-color: inherit;
 }
 
 .labels p{
@@ -60,8 +69,13 @@ a:focus{
 	text-align: center
 }
 
+.columns{
+	margin: 0 auto;
+	display: block;
+	width: 90%;
+}
 .card{
-	width: 100%;
+	width: 400px;
 	margin: 0 auto;
 	margin-top: 25px;
 	margin-bottom: 25px;
@@ -98,15 +112,27 @@ a:focus{
 	font-size: 14px;
 	text-decoration: none;
 }
-.list-group-item a{
+.list-group-item button{
 	text-decoration: none;
+	outline: none;
+	border: none;
+	padding: 0;
+	box-shadow: none;
+}
+
+.card .list-group-item button{
+	background-color: white;
+}
+
+.card .list-group-item button:hover{
+	background-color: white;
 }
 .list-group-item p:hover{
 	background-color: #44b395;
 	text-decoration: none !important;
 }
-.labels p.active {
-	background-color: orange;
+p.active {
+	background-color: orange !important;
 }
 
 .card button{
@@ -192,14 +218,13 @@ twitterwidget {
 	text-decoration: underline;
 }
 
-@media (max-width: 767px){
-	.card-columns{
-		column-count: 1;
-	}
-}
 
-@media (min-width: 1891px){
-	.card-columns{
-		column-count: 4;
+
+@media(max-width: 896px){
+	.card{
+		width: 100% !important;
+	}
+	.columns{
+		width: 100% !important;
 	}
 }

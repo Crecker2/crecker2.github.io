@@ -46,28 +46,28 @@
 	<div id="labelcontainer" class="container">
 		<div class="list-group-item labels noselect">
 			<div style="margin: 0 auto">
-				<a class="sort" href="#labelcontainer" data-sort="showall"><p class="active">All</p></a>
-				<a class="sort" href="#labelcontainer" data-sort="design"><p>Design</p></a>
-				<a class="sort" href="#labelcontainer" data-sort="content-writing"><p>Content Writing</p></a>
-				<a class="sort" href="#labelcontainer" data-sort="music"><p>Music</p></a>
-				<a class="sort" href="#labelcontainer" data-sort="web-dev"><p>Web Development</p></a>
-				<a class="sort" href="#labelcontainer" data-sort="social"><p>Social Media</p></a>
-				<a class="sort" href="#labelcontainer" data-sort="internship"><p>Internship Work</p></a>
+				<button class="sorts" data-sort="*"><p class="active">All</p></button>
+				<button class="sorts" data-sort=".design"><p>Design</p></button>
+				<button class="sorts" data-sort=".content-writing"><p>Content Writing</p></button>
+				<button class="sorts" data-sort=".music"><p>Music</p></button>
+				<button class="sorts" data-sort=".web-dev"><p>Web Development</p></button>
+				<button class="sorts" data-sort=".social"><p>Social Media</p></button>
+				<button class="sorts" data-sort=".internship"><p>Internship Work</p></button>
 			</div>
 		</div>
 	</div>
 
 	<!-- cards -->
 	<div class="container-fluid">
-		<div class="card-columns">
+		<div class="columns">
 			
 			<!-- SYEP card -->
 				<div class="card design internship">
 					<h3 class="card-header">SYEP Mortality Reduction Graphic</h3>
 					<img class="card-img-top" src="img/syep-mortality-prevention.png">
 					<div class="list-group-item">
-						<a href="#labelcontainer" class="sort" data-sort="design"><p>Design</p></a>
-						<a href="#labelcontainer" class="sort" data-sort="internship"><p>Internship Work</p></a>
+						<button class="sorts" data-sort=".design"><p>Design</p></button>
+						<button class="sorts" data-sort=".internship"><p>Internship Work</p></button>
 					</div>
 					<div class="card-block">
 						<p>I created this visualization while at J-PAL North America, with the assistance of the graphic design team.</p>
@@ -81,7 +81,7 @@
 					<h3 class="card-header">'Faith' by George Michael Arrangement</h3>
 					<img class="card-img-top" src="img/faithThumb.png">
 					<div class="list-group-item">
-						<a href="#labelcontainer" class="sort" data-sort="music"><p>Music</p></a>
+						<button class="sorts" data-sort=".music"><p>Music</p></button>
 					</div>
 					<div class="card-block">
 						<p>I arranged and planned choreography for my a cappella group's performance of 'Faith' by George Michael.</p>
@@ -94,8 +94,8 @@
 				<div class="card content-writing internship">
 					<h3 class="card-header">Weekly Newsletter Writing</h3>
 					<div class="list-group-item">
-						<a href="#labelcontainer" class="sort" data-sort="content-writing"><p>Content Writing</p></a>
-						<a href="#labelcontainer" class="sort" data-sort="internship"><p>Internship Work</p></a>
+						<button class="sorts" data-sort=".content-writing"><p>Content Writing</p></button>
+						<button class="sorts" data-sort=".internship"><p>Internship Work</p></button>
 					</div>
 					<div class="card-block">
 						<p>During my internship at J-PAL North America, I was responsible for conducting research for and writing weekly newsletters that went out to the J-PAL North America staff.</p>
@@ -110,9 +110,9 @@
 					<h3 class="card-header">Cold Case Act Website & Content</h3>
 					<img class="card-img-top" src="img/cca.png">
 					<div class="list-group-item">
-						<a href="#labelcontainer" class="sort" data-sort="design"><p>Design</p></a>
-						<a href="#labelcontainer" class="sort" data-sort="web-dev"><p>Web Development</p></a>
-						<a href="#labelcontainer" class="sort" data-sort="content-writing"><p>Content Writing</p></a>
+						<button class="sorts" data-sort=".design"><p>Design</p></button>
+						<button class="sort" data-sort=".web-dev"><p>Web Development</p></button>
+						<button class="sorts" data-sort=".content-writing"><p>Content Writing</p></button>
 					</div>
 					<div class="card-block">
 						<p>I assisted with website development and headed website content creation for coldcaseact.com, the website for H.R. 1272, my high school civics class’s legislation.</p>
@@ -126,8 +126,8 @@
 					<h3 class="card-header">Social Media Content Creation</h3>
 					<img class="card-img-top" src="img/socialthumb.png">
 					<div class="list-group-item">
-						<a href="#labelcontainer" class="sort" data-sort="social"><p>Social Media</p></a>
-						<a href="#labelcontainer" class="sort" data-sort="content-writing"><p>Content Writing</p></a>
+						<button class="sorts" data-sort=".social"><p>Social Media</p></button>
+						<button class="sorts" data-sort=".content-writing"><p>Content Writing</p></button>
 					</div>
 					<div class="card-block">
 						<p>At J-PAL North America, I was responsible for drafting content to be published on social media platforms.</p>
@@ -141,7 +141,7 @@
 					<h3 class="card-header">Album With A Cappella Group</h3>
 					<img class="card-img-top" src="img/unpealed.png">
 					<div class="list-group-item">
-						<a href="#labelcontainer" class="sort" data-sort="music"><p>Music</p></a>
+						<button class="sorts" data-sort=".music"><p>Music</p></button>
 					</div>
 					<div class="card-block">
 						<p>During the Spring 2017 semester, I recorded an album, Unpeeled, with my college a cappella group, Orange Appeal. I sang as a bass on several songs.</p>
@@ -155,8 +155,8 @@
 					<h3 class="card-header">OA Song Player</h3>
 					<img class="card-img-top" src="img/oaplayer.png">
 					<div class="list-group-item">
-						<a href="#labelcontainer" class="sort" data-sort="music"><p>Music</p></a>
-						<a href="#labelcontainer" class="sort" data-sort="web-dev"><p>Web Development</p></a>
+						<button class="sorts" data-sort=".music"><p>Music</p></button>
+						<button class="sorts" data-sort=".web-dev"><p>Web Development</p></button>
 					</div>
 					<div class="card-block">
 						<p>I developed a web-based song player to make it easier for my a cappella group to practice music.</p>
