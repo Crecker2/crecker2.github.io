@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 	var msnry = new Masonry(elem,{
 		itemSelector: '.card',
-		columnWidth: 425,
+		columnWidth: 375,
 		fitWidth: true
 	});
 
@@ -18,7 +18,7 @@ $(document).ready(function(){
 		  iso.arrange({
 		  	filter: filterValue,
 		  	masonry: {
-		  		columnWidth: 425
+		  		columnWidth: 375
 		  	},
 		  	transitionDuration: 0,
 		  	hiddenStyle: {
