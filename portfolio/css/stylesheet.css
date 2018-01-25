@@ -75,7 +75,7 @@ button:hover{
 	width: 90%;
 }
 .card{
-	width: 400px;
+	width: 350px;
 	margin: 0 auto;
 	margin-top: 25px;
 	margin-bottom: 25px;
@@ -220,7 +220,7 @@ twitterwidget {
 
 
 
-@media(max-width: 896px){
+@media(max-width: 445px){
 	.card{
 		width: 100% !important;
 	}
