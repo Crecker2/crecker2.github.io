@@ -220,7 +220,7 @@ twitterwidget {
 
 
 
-@media(max-width: 445px){
+@media(max-width: 600px){
 	.card{
 		width: 100% !important;
 	}
