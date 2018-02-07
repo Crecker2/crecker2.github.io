@@ -41,7 +41,7 @@ $(document).ready(function(){
 
 
 	$(window.location.hash).modal('show');
-	 $('.card[data-toggle="modal"]').click(function(){
+	 $('button[data-toggle="modal"]').click(function(){
 	     window.location.hash = $(this).data('target');
 	 });
 
