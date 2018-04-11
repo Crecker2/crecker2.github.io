@@ -2,16 +2,25 @@ $(document).ready(function(){
 
 	var elem = document.querySelector('.columns');
 
-	var iso = new Isotope(elem, {
-		itemSelector: '.card',
-	});
+// 	var iso = new Isotope(elem, {
+// 		itemSelector: '.card',
+// 	});
 
-	var msnry = new Masonry(elem,{
-		itemSelector: '.card',
-		columnWidth: 375,
-		fitWidth: true
+// 	var msnry = new Masonry(elem,{
+// 		itemSelector: '.card',
+// 		columnWidth: 375,
+// 		fitWidth: true
+// 	});
+	imagesLoaded(elem, function(){
+		var msnry = new Masonry(elem,{
+			itemSelector: '.card',
+			columnWidth: 375,
+			fitWidth: true
+		});
+		var iso = new Isotope(elem, {
+			itemSelector: '.card',
+		});
 	});
-
 	$('.list-group-item').on( 'click', 'button', function() {
 		  var filterValue = $( this ).attr('data-sort');
 		  
