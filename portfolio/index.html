@@ -164,6 +164,22 @@
 						<div class="fixer"></div>
 					</div>
 				</div>
+			
+			<!-- OA website -->
+			<div class="card design internship" style="position: absolute; left: 0px; top: 0px; border-color: rgb(255, 0, 238);">
+				<h3 class="card-header">Orange Appeal Website</h3>
+				<img class="card-img-top" src="img/oaweb.png">
+				<div class="list-group-item">
+					<button class="sorts" data-sort=".design"><p>Design</p></button>
+					<button class="sorts" data-sort=".web-dev"><p>Internship Work</p></button>
+					<button class="sorts" data-sort=".music"><p>Music</p></button>
+				</div>
+				<div class="card-block">
+					<p>I created a website for Orange Appeal, my a cappella group at Syracuse University.</p>
+					<button class="btn btn-large" id="oawebCard" data-toggle="modal" data-target="#oaweb">Read More</button>
+					<div class="fixer"></div>
+				</div>
+			</div>
 		
 		</div> <!--card-columns closure-->
 	</div> <!--container closure-->
@@ -351,6 +367,29 @@
 	      </div>
 	    </div>
 	  </div>
+	</div>
+	
+	<!-- OA website modal-->
+	<div class="modal fade" id="oaplayer" tabindex="-1" role="dialog" aria-labelledby="oaplayerLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+			    <h5 class="modal-title" id="exampleModalLabel">Orange Appeal Website</h5>
+			    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			      <span aria-hidden="true">×</span>
+			    </button>
+			  </div>
+			  <div class="modal-body">
+				<a target="_blank" href="https://orangeappeal.net">
+					<img class="modal-image" src="img/oaplayer.png" style="max-width: 40%; border: solid 1px orange">
+				</a>
+				<div class="modal-body">
+					<p>I created this <a href="https://orangeappeal.net">website</a> for Orange Appeal, my a cappella group at SU. This was one of my first production-grade websites, and it challenged me to come up with solutions to a handful of problems I'd never faced before.</p>
+					<p>Most notable on the webpage is the fully functional form; since I'm not running the site on a dedicated server, I couldn't store the user input in a database. Instead, I used a <a href="http://materializecss.com">material design css framework</a> to develop a frontend that interfaces with a Google Form which stores the data. This allows for easier maintenance and </p>
+				</div>
+			  </div>
+			</div>
+		</div>
 	</div>
 	
 	<!-- my js -->
