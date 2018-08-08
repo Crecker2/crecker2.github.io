@@ -6,11 +6,13 @@ $(document).ready(function(){
 		itemSelector: '.card',
 	});
 
-	var msnry = new Masonry(elem,{
-		itemSelector: '.card',
-		columnWidth: 375,
-		fitWidth: true
-	});
+	$('.columns').imagesLoaded(function(){
+		var msnry = new Masonry(elem,{
+			itemSelector: '.card',
+			columnWidth: 375,
+			fitWidth: true
+		});
+	});;
 	
 	$('.list-group-item').on( 'click', 'button', function() {
 		  var filterValue = $( this ).attr('data-sort');
